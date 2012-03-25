@@ -1,5 +1,5 @@
 ﻿/*
- * jQuery Remove Uppercase Accents v1.0
+ * jQuery Remove Uppercase Accents v1.0.1
  * http://github.com/ebababi/jquery-remove-upcase-accents/
  *
  * Automatically removes accented characters (currently greek) from elements
@@ -28,6 +28,10 @@ jQuery.extend(jQuery.expr[":"], {
 	uppercase: function( elem ) {
 		var attr = jQuery( elem ).css( "text-transform" );
 		return ( typeof attr !== "undefined" && attr === "uppercase" );
+		},
+	smallcaps: function( elem ) {
+		var attr = jQuery( elem ).css( "font-variant" );
+		return ( typeof attr !== "undefined" && attr === "small-caps" );
 	}
 });
 
@@ -37,23 +41,23 @@ jQuery.extend({
 
 		text = text.replace( /Ά/g, "Α" );
 		text = text.replace( /ά/g, "α" );
-		text = text.replace( /Έ/g, "ε" );
+		text = text.replace( /Έ/g, "Ε" );
 		text = text.replace( /έ/g, "ε" );
-		text = text.replace( /Ή/g, "η" );
+		text = text.replace( /Ή/g, "Η" );
 		text = text.replace( /ή/g, "η" );
-		text = text.replace( /Ί/g, "ι" );
-		text = text.replace( /Ϊ/g, "ι" );
+		text = text.replace( /Ί/g, "Ι" );
+		text = text.replace( /Ϊ/g, "Ι" );
 		text = text.replace( /ί/g, "ι" );
 		text = text.replace( /ϊ/g, "ι" );
 		text = text.replace( /ΐ/g, "ι" );
-		text = text.replace( /Ό/g, "ο" );
+		text = text.replace( /Ό/g, "Ο" );
 		text = text.replace( /ό/g, "ο" );
-		text = text.replace( /Ύ/g, "υ" );
-		text = text.replace( /Ϋ/g, "υ" );
+		text = text.replace( /Ύ/g, "Υ" );
+		text = text.replace( /Ϋ/g, "Υ" );
 		text = text.replace( /ύ/g, "υ" );
 		text = text.replace( /ϋ/g, "υ" );
 		text = text.replace( /ΰ/g, "υ" );
-		text = text.replace( /Ώ/g, "ω" );
+		text = text.replace( /Ώ/g, "Ω" );
 		text = text.replace( /ώ/g, "ω" );
 
 		elem.innerHTML = text;
@@ -71,8 +75,8 @@ jQuery.fn.extend({
 })( jQuery );
 
 jQuery( document ).ready(function($) {
-	$(":uppercase").removeAcc();
+	$(":uppercase, :smallcaps").removeAcc();
 	$(document).ajaxComplete(function( event, request, settings ) {
-		$(":uppercase").removeAcc();
+		$(":uppercase, :smallcaps").removeAcc();
 	});
 });
