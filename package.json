@@ -1,0 +1,28 @@
+{
+    "name": "jquery.remove-upcase-accents",
+    "version": "1.0",
+    "title": "jQuery Remove Uppercase Accents",
+    "author": {
+        "name": "Nikolaos Anastopoulos",
+        "url": "http://anastopoulos.net/"
+    },
+    "licenses": [
+        {
+            "type": "GPLv3",
+            "url": "COPYING"
+        }
+    ],
+    "dependencies": {
+        "jquery": "1"
+    },
+    "description": "Automatically removes accented characters (currently greek) from elements having their text content uppercase transformed through CSS.",
+    "keywords": [
+        "uppercase",
+        "accents",
+        "greek"
+    ],
+    "homepage": "https://github.com/ebababi/jquery-remove-upcase-accents",
+    "files": [
+        "jquery.remove-upcase-accents.js"
+    ]
+}
