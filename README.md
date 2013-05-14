@@ -28,4 +28,4 @@ file and include the following markup inside the <head> HTML element:
 
     <script type="text/javascript" src="jquery.remove-upcase-accents.js">
 
-Copyright (c) 2012 Nikolaos Anastopoulos, released under the GPLv3 license
+Copyright (c) 2012-2013 Nikolaos Anastopoulos, released under the GPLv3 license

@@ -5,7 +5,7 @@
  * Automatically removes accented characters (currently greek) from elements
  * having their text content uppercase transformed through CSS.
  *
- * Copyright © 2012 Nikolaos Anastopoulos
+ * Copyright © 2012-2013 Nikolaos Anastopoulos
  * All rights reserved.
  *
  * This program is free software: you can redistribute it and/or modify
