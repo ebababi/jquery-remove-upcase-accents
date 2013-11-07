@@ -37,7 +37,7 @@ jQuery.extend(jQuery.expr[":"], {
 
 jQuery.extend({
 	removeAcc: function( elem ) {
-		var text = elem.is( "input" ) ? elem.value : elem.innerHTML;
+		var text = jQuery( elem ).is( "input" ) ? elem.value : elem.innerHTML;
 
 		text = text.replace( /\u0386/g, "\u0391" ); // 'Ά':'Α'
 		text = text.replace( /\u0388/g, "\u0395" ); // 'Έ':'Ε'
@@ -60,7 +60,7 @@ jQuery.extend({
 		text = text.replace( /\u03CD/g, "\u03C5" ); // 'ύ':'υ'
 		text = text.replace( /\u03CE/g, "\u03C9" ); // 'ώ':'ω'
 
-		elem.is( "input" ) ? ( elem.value = text ) : ( elem.innerHTML = text );
+		jQuery( elem ).is( "input" ) ? ( elem.value = text ) : ( elem.innerHTML = text );
 	}
 });
 
