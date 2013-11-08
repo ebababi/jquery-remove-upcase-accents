@@ -7,7 +7,7 @@
         "accents",
         "greek"
     ],
-    "version": "1.0.2",
+    "version": "1.1.0",
     "author": {
         "name": "Nikolaos Anastopoulos",
         "url": "http://anastopoulos.net/"
@@ -16,10 +16,6 @@
         {
             "name": "Nikolaos Anastopoulos",
             "url": "https://github.com/ebababi"
-        },
-        {
-            "name": "Thanasis Doumas",
-            "url": "https://github.com/tdoumas"
         }
     ],
     "licenses": [
