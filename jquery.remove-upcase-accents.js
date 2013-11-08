@@ -87,8 +87,12 @@ jQuery.fn.extend({
 })( jQuery );
 
 jQuery( document ).ready(function($) {
-	$(":uppercase, :smallcaps").removeAcc();
-	$(document).ajaxComplete(function( event, request, settings ) {
-		$(":uppercase, :smallcaps").removeAcc();
+	$( ":uppercase:not(input[type!=submit], textarea, .no-remove-accents)" ).removeAcc();
+	$( ":smallcaps:not(input[type!=submit], textarea, .no-remove-accents)" ).removeAcc();
+	$( ".remove-accents, .remove-accents > *:not(input[type!=submit], textarea, .no-remove-accents)" ).removeAcc();
+	$( document ).ajaxComplete(function( event, request, settings ) {
+		$( ":uppercase:not(input[type!=submit], textarea, .no-remove-accents)" ).removeAcc();
+		$( ":smallcaps:not(input[type!=submit], textarea, .no-remove-accents)" ).removeAcc();
+		$( ".remove-accents, .remove-accents > *:not(input[type!=submit], textarea, .no-remove-accents)" ).removeAcc();
 	});
 });
