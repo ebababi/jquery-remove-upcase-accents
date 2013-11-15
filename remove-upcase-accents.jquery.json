@@ -7,7 +7,7 @@
         "accents",
         "greek"
     ],
-    "version": "1.1.0",
+    "version": "1.1.1",
     "author": {
         "name": "Nikolaos Anastopoulos",
         "url": "http://anastopoulos.net/"
@@ -21,13 +21,13 @@
     "licenses": [
         {
             "type": "GPLv3",
-            "url": "https://raw.github.com/ebababi/jquery-remove-upcase-accents/v1.0.2/COPYING"
+            "url": "https://raw.github.com/ebababi/jquery-remove-upcase-accents/v1.1.1/COPYING"
         }
     ],
     "bugs": "https://github.com/ebababi/jquery-remove-upcase-accents/issues",
     "homepage": "https://github.com/ebababi/jquery-remove-upcase-accents",
     "docs": "https://github.com/ebababi/jquery-remove-upcase-accents#readme",
-    "download": "https://raw.github.com/ebababi/jquery-remove-upcase-accents/v1.0.2/jquery.remove-upcase-accents.js",
+    "download": "https://raw.github.com/ebababi/jquery-remove-upcase-accents/v1.1.1/jquery.remove-upcase-accents.js",
     "dependencies": {
         "jquery": ">=1.0"
     }
