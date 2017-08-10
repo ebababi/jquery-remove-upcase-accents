@@ -1,11 +1,11 @@
 ﻿/*
- * jQuery Remove Uppercase Accents v1.1.1
+ * jQuery Remove Uppercase Accents v1.2.0
  * http://github.com/ebababi/jquery-remove-upcase-accents/
  *
  * Automatically removes accented characters (currently greek) from elements
  * having their text content uppercase transformed through CSS.
  *
- * Copyright © 2012-2013 Nikolaos Anastopoulos
+ * Copyright © 2012-2017 Nikolaos Anastopoulos
  * All rights reserved.
  *
  * This program is free software: you can redistribute it and/or modify
